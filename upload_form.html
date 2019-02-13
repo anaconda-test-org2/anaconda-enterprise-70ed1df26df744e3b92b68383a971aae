@@ -1,0 +1,47 @@
+<!doctype html>
+<style>
+h1, body {
+    font-family: "Arial", Times, serif;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#wrap {
+   width:600px;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:300px;
+}
+#right_col {
+   float:right;
+   width:300px;
+}
+</style>
+<title>Upload an image for classification</title>
+<h1>Upload an image for classification</h1>
+<form method="post" enctype="multipart/form-data" action="/upload">
+  <div id="weather_app">
+    <div id="left_col">
+      <center>
+        <label class="my-button-class" style="background-color: white;" for="my-file-selector">
+          <input id="my-file-selector" type="file" name=file1 style="display:none;"> Select a File
+        </label>
+      </center>
+    </div>
+    <div style="right_col">
+    <input type=submit value=Upload class="button">
+    </div>
+  </div>
+</form>
+<p>
+Image classification application powered by TensorFlow and Anaconda
+</p>

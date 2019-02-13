@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Image classification for: {{ filename }}</title>
+</head>
+<body>
+<h1>Image classification for: {{ filename }}</h1>
+<img alt="Embedded Image" src="data:image/png;base64,{{ img }}" />
+
+<table style="width:500px">
+  {% for value in values %}
+  <tr>
+    <th>{{ value[0] }}</th>
+    <th>{{ value[1] }}</th>
+  </tr>
+  {% end %}
+</table>
+
+<button type="button"><a href="/">Classify New Image</a></button>
+
+</body>
+</html>
